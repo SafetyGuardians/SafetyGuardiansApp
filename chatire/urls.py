@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
 from django.contrib import admin
 from django.urls import path, include
 
@@ -21,6 +23,7 @@ from rest_framework_jwt.views import verify_jwt_token
 from chat.views import raise_404
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
 
     # Custom URL's
